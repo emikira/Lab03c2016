@@ -8,9 +8,20 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="mandarine.dam.isi.frsf.utn.edu.ar.lab03c2016.MainActivity">
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay"-->
+        <!--android:id="@+id/toolbar">-->
+    <!--</android.support.design.widget.AppBarLayout>-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView"
+        android:choiceMode="none"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/linearLayout" />
+
+
 </RelativeLayout>
