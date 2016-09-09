@@ -21,7 +21,8 @@
         android:id="@+id/listView"
         android:choiceMode="none"
         android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/linearLayout" />
+        android:layout_toEndOf="@+id/linearLayout"
+        android:visibility="visible" />
 
 
 </RelativeLayout>
