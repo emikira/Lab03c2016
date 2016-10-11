@@ -7,6 +7,10 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Categoria implements Serializable {
     private Integer id;
     private String descripcion;

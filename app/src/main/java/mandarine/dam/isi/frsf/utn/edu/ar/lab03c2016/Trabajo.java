@@ -1,8 +1,4 @@
 package mandarine.dam.isi.frsf.utn.edu.ar.lab03c2016;
-
-/**
- * Created by Usuario on 08/09/2016.
- */
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Random;

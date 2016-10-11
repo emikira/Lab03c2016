@@ -7,60 +7,88 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@+id/categoria"
+        android:text=""
         android:id="@+id/textViewCategoria" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@+id/descripcion"
+        android:text=""
         android:id="@+id/textViewNombreTrabajo" />
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Horas: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textoHoras"
+            android:layout_weight="0.06" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Horas: @+id/horasPresupuestadas"
+            android:text=""
             android:id="@+id/textViewHoras" />
 
         <TextView
+            android:text="Max $/Hora: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textoPrecioHoras"
+            android:layout_weight="0.06" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Max $/Hora: @+id/precioMaximoHora"
-            android:id="@+id/textViewPrecioHora" />
+            android:text=""
+            android:id="@+id/textViewPrecioHora"
+            android:layout_weight="0.27" />
 
-        <ImageView android:id="@+id/imagenIdioma"  />
+        <ImageView android:id="@+id/imagenIdioma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Fecha Fin: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textoFechaFin"
+            android:layout_weight="0.11" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Fecha Fin: @+id/fechaEntrega"
-            android:id="@+id/fechaFin" />
+            android:text=""
+            android:id="@+id/textViewFechaFin" />
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="En Inglés"
             android:id="@+id/checkBox"
-            android:clickable="true" />
+            android:clickable="false"
+            android:focusable="false"
+            android:checked="false" />
 
 
     </LinearLayout>
