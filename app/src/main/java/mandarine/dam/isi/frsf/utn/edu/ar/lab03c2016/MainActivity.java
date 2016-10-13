@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.menu_postularse:
 
-                Toast.makeText(this,getString(R.string.msj_postulado),Toast.LENGTH_SHORT);
+                Toast.makeText(this,getString(R.string.msj_postulado),Toast.LENGTH_SHORT).show();
                 return true;
 
             case R.id.menu_compartir:
