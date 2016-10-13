@@ -70,7 +70,7 @@ public class MiAdapter extends BaseAdapter{
         fechaEntrega.setText(formatoFecha.format(this.getItem(position).getFechaEntrega()));
 
         CheckBox requiereIngles = (CheckBox) row.findViewById(R.id.checkBox);
-        requiereIngles.setEnabled((this.getItem(position)).getRequiereIngles());
+        requiereIngles.setChecked((this.getItem(position)).getRequiereIngles());
 
         ImageView bandera = (ImageView) row.findViewById(R.id.imagenIdioma);
         //1 US$ 2 Euro 3 AR$- 4 Libra 5 R$

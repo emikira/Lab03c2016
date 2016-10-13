@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">WorkFromHome</string>
     <string name="label_crearOferta">CREAR UNA OFERTA</string>
-    <string name="a">a</string>
-    <string name="b">b</string>
-    <string name="c">c</string>
+    <string name="label_postularse">Postularse a esta oferta</string>
+    <string name="label_compartir">Compartir esta oferta</string>
+    <string name="msj_postulado">Se ha postulado a la oferta de manera exitosa</string>
     <string name="d">d</string>
 </resources>

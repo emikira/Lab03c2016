@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical"
+<LinearLayout
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/linearLayout"
@@ -9,16 +10,17 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text=""
-        android:id="@+id/textViewCategoria" />
+        android:text="Texto"
+        android:id="@+id/textViewCategoria"
+        android:textStyle="normal|italic" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text=""
-        android:id="@+id/textViewNombreTrabajo" />
+        android:text="Texto"
+        android:id="@+id/textViewNombreTrabajo"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textStyle="normal|bold" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -30,34 +32,33 @@
             android:text="Horas: "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textoHoras"
-            android:layout_weight="0.06" />
+            android:id="@+id/textoHoras" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
             android:text=""
             android:id="@+id/textViewHoras" />
 
         <TextView
-            android:text="Max $/Hora: "
+            android:text="   Max $/Hora: "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textoPrecioHoras"
-            android:layout_weight="0.06" />
+            android:id="@+id/textoPrecioHoras" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
             android:text=""
             android:id="@+id/textViewPrecioHora"
-            android:layout_weight="0.27" />
+             />
 
         <ImageView android:id="@+id/imagenIdioma"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="false"
+            android:paddingBottom="9dp"
+            android:paddingLeft="8dp" />
 
     </LinearLayout>
 
@@ -72,12 +73,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textoFechaFin"
-            android:layout_weight="0.11" />
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
             android:text=""
             android:id="@+id/textViewFechaFin" />
 
