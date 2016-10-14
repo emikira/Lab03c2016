@@ -12,58 +12,59 @@
     tools:context="mandarine.dam.isi.frsf.utn.edu.ar.lab03c2016.AltaTrabajo">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
 
         <TextView
-            android:text="Nueva Oferta"
+            android:id="@+id/textViewOferta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textViewOferta"
+            android:text="Nueva Oferta"
             android:textSize="18sp"
             android:textStyle="normal|bold" />
 
         <EditText
+            android:id="@+id/editTextOferta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:hint="@string/ingrese_nombre"
             android:ems="10"
-            android:id="@+id/editTextOferta" />
+            android:hint="@string/ingrese_nombre"
+            android:inputType="textPersonName" />
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:paddingTop="20dp">
 
             <TextView
-                android:text="Categoría: "
+                android:id="@+id/textViewCategoria"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textViewCategoria"
-                android:layout_weight="0.04" />
+                android:layout_weight="0.04"
+                android:text="Categoría: " />
 
             <Spinner
-                android:layout_height="wrap_content"
                 android:id="@+id/spinner"
-                android:layout_weight="0.48"
-                android:layout_width="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48" />
 
         </LinearLayout>
 
         <TextView
-            android:text="Moneda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="20dp" />
+            android:paddingTop="20dp"
+            android:text="Moneda" />
 
         <RadioGroup
+            android:id="@+id/radioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -71,82 +72,83 @@
             android:paddingBottom="20dp">
 
             <RadioButton
+                android:id="@+id/radioButtonAr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/radioButtonAr"
                 android:layout_weight="1" />
 
             <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ar"
-                android:id="@+id/imageView"
                 android:layout_weight="1"
                 android:cropToPadding="false"
-                android:paddingTop="6dp" />
+                android:paddingTop="6dp"
+                app:srcCompat="@drawable/ar" />
 
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/radioButtonBr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/br"
                 android:id="@+id/imageView2"
-                android:layout_weight="1"
-                android:paddingTop="6dp" />
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="6dp"
+                app:srcCompat="@drawable/br" />
+
+            <RadioButton
                 android:id="@+id/radioButtonEu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/eu"
                 android:id="@+id/imageView3"
-                android:layout_weight="1"
-                android:paddingTop="6dp"  />
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="6dp"
+                app:srcCompat="@drawable/eu"  />
+
+            <RadioButton
                 android:id="@+id/radioButtonUk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
             <ImageView
+                android:id="@+id/imageView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/uk"
-                android:id="@+id/imageView4"
                 android:layout_weight="1"
-                android:paddingTop="6dp"  />
+                android:paddingTop="6dp"
+                app:srcCompat="@drawable/uk"  />
 
             <RadioButton
+                android:id="@+id/radioButtonUs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/radioButtonUs"
                 android:layout_weight="1" />
 
             <ImageView
+                android:id="@+id/imageView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/us"
-                android:id="@+id/imageView5"
                 android:layout_weight="1"
-                android:paddingTop="6dp" />
+                android:paddingTop="6dp"
+                app:srcCompat="@drawable/us" />
 
         </RadioGroup>
 
         <Button
-            android:text="GUARDAR"
+            android:id="@+id/botonGuardar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="GUARDAR" />
 
     </LinearLayout>
 </RelativeLayout>

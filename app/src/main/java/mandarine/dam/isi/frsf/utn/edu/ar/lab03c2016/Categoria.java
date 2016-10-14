@@ -12,6 +12,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Categoria implements Serializable {
+    public static final Categoria[] CATEGORIAS_MOCK= new Categoria[]{
+            new Categoria(1,"Arquitecto"),
+            new Categoria(2,"Desarrollador"),
+            new Categoria(3, "Tester"),
+            new Categoria(4,"Analista"),
+            new Categoria(5,"Mobile Developer")
+    };
     private Integer id;
     private String descripcion;
     private List<Trabajo> trabajos;
@@ -54,12 +61,8 @@ public class Categoria implements Serializable {
         this.trabajos.add(t);
     }
 
-    public static final Categoria[] CATEGORIAS_MOCK= new Categoria[]{
-            new Categoria(1,"Arquitecto"),
-            new Categoria(2,"Desarrollador"),
-            new Categoria(3, "Tester"),
-            new Categoria(4,"Analista"),
-            new Categoria(5,"Mobile Developer")
-    };
+    public String toString(){
+        return (descripcion);
+    }
 
 }
