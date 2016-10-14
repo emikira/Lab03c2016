@@ -21,23 +21,26 @@
         android:layout_alignParentStart="true">
 
         <TextView
-            android:text="Ingrese Oferta"
+            android:text="Nueva Oferta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textViewOferta" />
+            android:id="@+id/textViewOferta"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Nombre Oferta"
+            android:hint="@string/ingrese_nombre"
             android:ems="10"
             android:id="@+id/editTextOferta" />
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
 
             <TextView
                 android:text="Categoría: "
@@ -57,13 +60,15 @@
         <TextView
             android:text="Moneda"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp" />
 
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:orientation="horizontal" >
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
 
             <RadioButton
                 android:layout_width="wrap_content"

@@ -1,8 +1,15 @@
 <resources>
     <string name="app_name">WorkFromHome</string>
-    <string name="label_crearOferta">CREAR UNA OFERTA</string>
+    <string name="toolbar_crearOferta">Crear una oferta</string>
+    <string name="toolbar_verOfertas">Ver mis ofertas</string>
+    <string name="toolbar_config">Configuración</string>
+    <string name="toolbar_salir">Salir</string>
     <string name="label_postularse">Postularse a esta oferta</string>
     <string name="label_compartir">Compartir esta oferta</string>
     <string name="msj_postulado">Se ha postulado a la oferta de manera exitosa</string>
-    <string name="d">d</string>
+    <string name="msj_error">La operación no se pudo completar</string>
+    <string name="msj_agregado">Trabajo agregado exitosamente</string>
+    <string name="ingrese_nombre">Ingrese el nombre de la oferta</string>
+
+
 </resources>

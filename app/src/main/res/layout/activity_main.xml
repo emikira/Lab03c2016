@@ -9,13 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="mandarine.dam.isi.frsf.utn.edu.ar.lab03c2016.MainActivity">
 
-    <!--<android.support.design.widget.AppBarLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:theme="@style/AppTheme.AppBarOverlay"-->
-        <!--android:id="@+id/toolbar">-->
-    <!--</android.support.design.widget.AppBarLayout>-->
-
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

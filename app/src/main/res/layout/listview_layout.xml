@@ -26,7 +26,8 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:paddingTop="6dp">
 
         <TextView
             android:text="Horas: "
@@ -83,12 +84,15 @@
 
         <CheckBox
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="En Inglés"
             android:id="@+id/checkBox"
             android:clickable="false"
             android:focusable="false"
-            android:checked="false" />
+            android:textColor="?android:attr/textColorSecondaryNoDisable"
+            android:enabled="false"
+            android:textSize="13sp"
+            android:layout_height="22dp"
+            android:textColorHighlight="?attr/actionMenuTextColor" />
 
 
     </LinearLayout>

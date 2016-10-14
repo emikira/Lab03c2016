@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="@string/toolbar_crearOferta"
+        android:id="@+id/botonCrearOferta" />
+    <item android:title="@string/toolbar_verOfertas"
+        android:id="@+id/botonVerOfertas" />
+    <item android:title="@string/toolbar_config"
+        android:id="@+id/botonConfig" />
+    <item android:title="@string/toolbar_salir"
+        android:id="@+id/botonSalir" />
+</menu>
