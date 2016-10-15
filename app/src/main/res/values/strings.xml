@@ -10,6 +10,7 @@
     <string name="msj_error">La operación no se pudo completar</string>
     <string name="msj_agregado">Trabajo agregado exitosamente</string>
     <string name="ingrese_nombre">Ingrese el nombre de la oferta</string>
+    <string name="msj_ingreseNombre">Por favor, ingrese el nombre de la oferta</string>
 
 
 </resources>

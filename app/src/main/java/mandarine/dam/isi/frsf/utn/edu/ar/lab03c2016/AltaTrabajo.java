@@ -11,6 +11,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -70,16 +71,21 @@ public class AltaTrabajo extends AppCompatActivity implements View.OnClickListen
         Intent resultIntent = new Intent();
 
 
-        if(v.getId() == R.id.botonGuardar && !nombreOfertaEmpty()){
-            nuevoTrabajo.setCategoria((Categoria)spinnerCategoria.getSelectedItem());
-            nuevoTrabajo.setDescripcion(nombreNuevaOferta.getText().toString());
-            nuevoTrabajo.setMonedaPago(monedaElegida);
+        if(v.getId() == R.id.botonGuardar) {
+            if (nombreOfertaEmpty()) {
+                Toast.makeText(this, getString(R.string.msj_ingreseNombre), Toast.LENGTH_SHORT).show();
+            } else {
 
-            resultCode = 1;
+                nuevoTrabajo.setCategoria((Categoria) spinnerCategoria.getSelectedItem());
+                nuevoTrabajo.setDescripcion(nombreNuevaOferta.getText().toString());
+                nuevoTrabajo.setMonedaPago(monedaElegida);
 
-            resultIntent.putExtra("nuevo", nuevoTrabajo);
-            setResult(resultCode, resultIntent);
-            finish();
+                resultCode = 1;
+
+                resultIntent.putExtra("nuevo", nuevoTrabajo);
+                setResult(resultCode, resultIntent);
+                finish();
+            }
         }
     }
 
