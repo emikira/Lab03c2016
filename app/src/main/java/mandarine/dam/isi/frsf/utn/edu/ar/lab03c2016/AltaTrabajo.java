@@ -69,7 +69,8 @@ public class AltaTrabajo extends AppCompatActivity implements View.OnClickListen
         int resultCode = 0;
         Intent resultIntent = new Intent();
 
-        if(v.getId() == R.id.botonGuardar){
+
+        if(v.getId() == R.id.botonGuardar && !nombreOfertaEmpty()){
             nuevoTrabajo.setCategoria((Categoria)spinnerCategoria.getSelectedItem());
             nuevoTrabajo.setDescripcion(nombreNuevaOferta.getText().toString());
             nuevoTrabajo.setMonedaPago(monedaElegida);
@@ -80,6 +81,12 @@ public class AltaTrabajo extends AppCompatActivity implements View.OnClickListen
             setResult(resultCode, resultIntent);
             finish();
         }
+    }
+
+    private boolean nombreOfertaEmpty() {
+
+        return nombreNuevaOferta.getText().toString().isEmpty();
+
     }
 
     public void onCheckedChanged(RadioGroup group, int checkedId){
